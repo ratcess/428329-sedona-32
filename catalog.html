@@ -137,19 +137,18 @@
                 </form>
             </section>
         </header>
-        <section class="hotels">
+        <section class="sort">
             <h2 class="visually-hidden">Сортировка</h2>
-            <form class="sorting-type">
-                <p class="sorting-results">Найдено гостиниц: 38</p>
+            <p class="sorting-results">Найдено гостиниц: 38</p>
+            <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
-                    <option value="cheap">Сначала дешевые</option>
+                    <option value="cheap" selected>Сначала дешевые</option>
                     <option value="popular">Сначала популярные</option>
                     <option value="expensive">Сначала дорогие</option>
                 </select>
                 <button class="visually-hidden" type="submit">Отсортировать</button>
             </form>
-
             <a href="#" class="button-sort">
                 <span class="visually-hidden">Показать таблицу</span>
             </a>
@@ -159,57 +158,71 @@
             <a href="#" class="button-sort button-sort-active">
                 <span class="visually-hidden">Показать список</span>
             </a>
-            <div class="hotel-card">
+          </section>
+          <section class="hotel-cards">
+            <h2 class="visually-hidden">Результаты поиска</h2>
                 <ul class="hotel-list">
                     <li class="hotel-card">
-                        <a class="hotel-card-link" href="#">
+                        <a class="hotel-card-image-link" href="#">
                             <img class="hotel-card-image" src="" alt="">
+                        </a>
+                        <a class="hotel-card-title-link" href="#">
                             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                         </a>
                         <p class="hotel-card-type">Гостиница</p>
                         <p class="hotel-card-price">От 4000 ₽</p>
                         <a href="#" class="button hotel-card-button">Подробнее</a>
                         <button class="button button-to-favorites" type="button">В избранное</button>
+                        <p class="hotel-stars">Четыре звезды</p>
                         <p class="rating">Рейтинг: 8,5</p>
                     </li>
 
                     <li class="hotel-card">
-                        <a class="hotel-card-link" href="#">
-                            <img class="hotel-card-image" src="" alt="">
-                            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+                        <a class="hotel-card-image-link" href="#">
+                          <img class="hotel-card-image" src="" alt="">
+                        </a>
+                        <a class="hotel-card-title-link" href="#">
+                          <h3 class="hotel-card-title">Desert Quail Inn</h3>
                         </a>
                         <p class="hotel-card-type">Мотель</p>
                         <p class="hotel-card-price">От 3000 ₽</p>
                         <a href="#" class="button hotel-card-button">Подробнее</a>
                         <button class="button button-to-favorites" type="button">В избранное</button>
+                        <p class="hotel-stars">Три звезды</p>
                         <p class="rating">Рейтинг: 8,9</p>
                     </li>
 
                     <li class="hotel-card">
-                        <a class="hotel-card-link" href="#">
-                            <img class="hotel-card-image" src="" alt="">
-                            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+                        <a class="hotel-card-image-link" href="#">
+                          <img class="hotel-card-image" src="" alt="">
+                        </a>
+                        <a class="hotel-card-title-link" href="#">
+                          <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                         </a>
                         <p class="hotel-card-type">Апартаменты</p>
                         <p class="hotel-card-price">От 2000 ₽</p>
                         <a href="#" class="button hotel-card-button">Подробнее</a>
                         <button class="button button-in-favorites" type="button">В избранном</button>
+                        <p class="hotel-stars">Две звезды</p>
                         <p class="rating">Рейтинг: 9,2</p>
                     </li>
 
                     <li class="hotel-card">
-                        <a class="hotel-card-link" href="#">
-                            <img class="hotel-card-image" src="" alt="">
-                            <h3 class="hotel-card-title">GreenTree Inn</h3>
+                        <a class="hotel-card-image-link" href="#">
+                          <img class="hotel-card-image" src="" alt="">
+                        </a>
+                        <a class="hotel-card-title-link" href="#">
+                          <h3 class="hotel-card-title">GreenTree Inn</h3>
                         </a>
                         <p class="hotel-card-type">Гостиница</p>
                         <p class="hotel-card-price">От 3000 ₽</p>
                         <a href="#" class="button hotel-card-button">Подробнее</a>
                         <button class="button button-to-favorites" type="button">В избранное</button>
+                        <p class="hotel-stars">Две звезды</p>
                         <p class="rating">Рейтинг: 9,2</p>
                     </li>
                 </ul> 
-            </div>
+            
             <button class="button pagination-show-more" type="button">Загрузить еще</button>
             <ul class="pagination">
                 <li class="pagination-item">
@@ -232,13 +245,13 @@
                 </li>
             </ul>
 
-            <form class="hotel-view">
+            <form class="hotel-view" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="hotel-view-title" for="hotel-view">Гостиниц на странице:</label>
                 <select class="select-control" id="sorting" name="hotel-view">
-                    <option value="four">4</option>
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
+                    <option value="four" selected>4</option>
                     <option value="five">5</option>
                     <option value="six">6</option>
                     <option value="seven">7</option>
@@ -249,21 +262,21 @@
                 <button class="visually-hidden" type="submit">Отсортировать</button>
             </form>
         </section>
-
-        <section class="newsletter-inner">
-            <h2 class="newsletter-inner-title">Подпишитесь на рассылку</h2>
-            <p class="newsletter-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="newsletter-inner-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="newsletter-inner-email">
-                <label class="visually-hidden" for="newsletter-inner-email">Email</label>
-                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-inner-email" id="newsletter-email" required>
-              </p>
-              <button class="button" type="submit">Подписаться</button>
-            </form>
-          </section>
     </main>
 
     <footer class="page-footer">
+      <section class="newsletter-inner">
+        <h2 class="newsletter-inner-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-inner-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="newsletter-inner-email">
+            <label class="visually-hidden" for="newsletter-inner-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-inner-email" id="newsletter-email" required>
+          </p>
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
+
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
