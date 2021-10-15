@@ -151,11 +151,11 @@ body {
     background: rgba(131, 179, 211, 0.12);
 }
 
-#advantages-list-item-light {
+.advantages-list-item.advantages-list-item-light {
     background-color: #ffffff;
 }
 
-#advantages-list-item-dark {
+.advantages-list-item.advantages-list-item-dark {
     background: rgba(131, 179, 211, 0.2);
 }
 
