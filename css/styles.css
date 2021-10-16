@@ -18,10 +18,6 @@ html {
     height: 100%;
 }
 
-.advantages-picture {
-    display: block;
-}
-
 body {
     margin: 0;
     display: flex;
@@ -104,6 +100,10 @@ body {
 
 .advantages {
     width: 1200px;
+}
+
+.advantages-picture {
+    display: block;
 }
 
 .advantages-full {
@@ -291,7 +291,6 @@ body {
 }
 
 .main-header {
-    background-color: #87CEFA;
     background-image: url("../img/background-hotels.jpg");
     background-repeat: no-repeat;
 }
@@ -302,6 +301,18 @@ body {
     line-height: 78px;
     color: #ffffff;
     text-align: left;
+    padding-left: 71px;
+    padding-top: 35px;
+}
+
+.breadcrumbs {
+    text-align: left;
+}
+
+.breadcrumbs li {
+    margin-left: 30px;
+    display: inline;
+    list-style: none;
 }
 
 .breadcrumbs-link {
@@ -311,12 +322,53 @@ body {
     text-align: left;
 }
 
+.catalog-filter {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+}
+
+.catalog-filter-group {
+}
+
+
+.catalog-filter-group.infrastructure {
+    width: 150px;
+    margin-left: 71px;
+}
+
+.catalog-filter-group.type-of-housing {
+    margin-left: 67px;
+    width: 150px;
+}
+
+.catalog-filter-group.price {
+    margin-right: 81px;
+    width: 290px;
+}
+
+.catalog-filter-group.catalog-buttons {
+    margin-right: 72px;
+    width: 160px;
+}
+
+.catalog-filter-list {
+    list-style: none;
+    margin: 0;
+}
+
 .catalog-filter-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
     text-align: left;
+}
+
+.sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .control-label {
@@ -334,11 +386,33 @@ body {
     background-color: #ffffff;
     text-align: left;
     text-transform: uppercase;
+
+    width: 350px;
+    margin-left: 71px;
+}
+
+.sorting-type {
+    width: 290px;
 }
 
 .select-control {
     font-size: 18px;
     line-height: 24px;
+}
+
+.hotel-cards {
+    display: flex;
+    flex-direction: column;
+    width: 1065px;
+    margin-left: 31px;
+    margin-right: 72px;
+}
+
+.hotel-card {
+    display: flex;
+    flex-direction: row;
+    width: 1065px;
+    justify-content: space-between;
 }
 
 .hotel-card-title {
@@ -382,6 +456,30 @@ body {
     color: #333333;
     background-color: #F2F2F2;
     text-transform: uppercase;
+}
+
+.button.pagination-show-more {
+    width: 625px;
+    margin-left: 288px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    width: 1056px;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.pagination-item {
+    width: 56px;
 }
 
 .pagination-link {

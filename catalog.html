@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div class="page-container">
+
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -60,9 +62,9 @@
                 </li>
               </ul>
             <section class="catalog-hotels">
-                <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+                <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <fieldset class="catalog-filter-group">
+                    <fieldset class="catalog-filter-group infrastructure">
                         <legend class="catalog-filter-title">Инфраструктура:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
@@ -88,7 +90,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="catalog-filter-group">
+                    <fieldset class="catalog-filter-group type-of-housing">
                         <legend class="catalog-filter-title">Тип жилья:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
@@ -115,7 +117,7 @@
                         </ul>
 
                     </fieldset>
-                    <fieldset class="catalog-filter-group">
+                    <fieldset class="catalog-filter-group price">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                         <label class="catalog-filter-label">
                             <input class="catalog-filter-input" type="number" name="min-price"> от
@@ -123,8 +125,6 @@
                         <label class="catalog-filter-label">
                             <input class="catalog-filter-input" type="number" name="max-price"> до
                         </label>
-
-
                         <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>
@@ -133,16 +133,18 @@
                         </button>
                     </fieldset>
 
-                    <button class="button" type="submit">Применить</button>
-                    <button class="button-reset" type="reset">Сбросить</button>
+                    <fieldset class="catalog-filter-group catalog-buttons">
+                      <button class="button" type="submit">Применить</button>
+                      <button class="button-reset" type="reset">Сбросить</button>
+                  </fieldset>
                 </form>
             </section>
         </header>
         <section class="sort">
-            <h2 class="visually-hidden">Сортировка</h2>
+            <h2 class="visually-hidden" hidden>Сортировка</h2>
             <p class="sorting-results">Найдено гостиниц: 38</p>
             <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <label class="visually-hidden" for="sorting" hidden>Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
                     <option value="cheap" selected>Сначала дешевые</option>
                     <option value="popular">Сначала популярные</option>
@@ -159,9 +161,9 @@
             <a href="#" class="button-sort button-sort-active">
                 <span class="visually-hidden">Показать список</span>
             </a>
-          </section>
-          <section class="hotel-cards">
-            <h2 class="visually-hidden">Результаты поиска</h2>
+        </section>
+        <section class="hotel-cards">
+          <h2 class="visually-hidden" hidden>Результаты поиска</h2>
                 <ul class="hotel-list">
                     <li class="hotel-card">
                         <a class="hotel-card-image-link" href="#">
@@ -177,7 +179,6 @@
                         <p class="hotel-stars">Четыре звезды</p>
                         <p class="rating">Рейтинг: 8,5</p>
                     </li>
-
                     <li class="hotel-card">
                         <a class="hotel-card-image-link" href="#">
                           <img class="hotel-card-image" src="img/hotels/hotel-desert-quail-inn.jpg" alt="" width="180" height="120">
@@ -192,7 +193,6 @@
                         <p class="hotel-stars">Три звезды</p>
                         <p class="rating">Рейтинг: 8,9</p>
                     </li>
-
                     <li class="hotel-card">
                         <a class="hotel-card-image-link" href="#">
                           <img class="hotel-card-image" src="img/hotels/hotel-villas-at-poco-diablo.jpg" alt="" width="180" height="120">
@@ -207,7 +207,6 @@
                         <p class="hotel-stars">Две звезды</p>
                         <p class="rating">Рейтинг: 9,2</p>
                     </li>
-
                     <li class="hotel-card">
                         <a class="hotel-card-image-link" href="#">
                           <img class="hotel-card-image" src="img/hotels/hotel-greentree-inn.jpg" alt="" width="180" height="120">
@@ -223,9 +222,11 @@
                         <p class="rating">Рейтинг: 9,2</p>
                     </li>
                 </ul> 
-            
+
             <button class="button pagination-show-more" type="button">Загрузить еще</button>
-            <ul class="pagination">
+
+            <div class="pagination">
+            <ul class="pagination-list">
                 <li class="pagination-item">
                     <a class="pagination-link pagination-current">1</a>
                 </li>
@@ -262,6 +263,9 @@
                 </select>
                 <button class="visually-hidden" type="submit">Отсортировать</button>
             </form>
+          </div>
+
+
         </section>
     </main>
 
@@ -277,9 +281,9 @@
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
-
+      <div class="page-footer-container">
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden" hidden>Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-button" href="#">
@@ -300,17 +304,18 @@
       </section>
 
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контактный телефон</h2>
+        <h2 class="visually-hidden" hidden>Контактный телефон</h2>
         <a class="footer-contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
       </section>
 
       <section class="footer-about">
-        <h2 class="visually-hidden">О нас</h2>
+        <h2 class="visually-hidden" hidden>О нас</h2>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" alt="HTML-академия" src="img/logo-html.svg" width="115" height="34">
         </a>
       </section>
+    </div>
     </footer>
-
+    </div>
   </body>
 </html>
