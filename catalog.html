@@ -64,7 +64,7 @@
             <section class="catalog-hotels">
                 <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                    <fieldset class="catalog-filter-group infrastructure">
+                    <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфраструктура:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
@@ -90,7 +90,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="catalog-filter-group type-of-housing">
+                    <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Тип жилья:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
@@ -117,7 +117,7 @@
                         </ul>
 
                     </fieldset>
-                    <fieldset class="catalog-filter-group price">
+                    <fieldset class="catalog-filter-group price-filter">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                         <label class="catalog-filter-label">
                             <input class="catalog-filter-input" type="number" name="min-price"> от
@@ -133,7 +133,7 @@
                         </button>
                     </fieldset>
 
-                    <fieldset class="catalog-filter-group catalog-buttons">
+                    <fieldset class="catalog-filter-group">
                       <button class="button" type="submit">Применить</button>
                       <button class="button-reset" type="reset">Сбросить</button>
                   </fieldset>
@@ -142,25 +142,27 @@
         </header>
         <section class="sort">
             <h2 class="visually-hidden" hidden>Сортировка</h2>
-            <p class="sorting-results">Найдено гостиниц: 38</p>
-            <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
+            <p class="sort-results">Найдено гостиниц: 38</p>
+            <form class="sort-type" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="sorting" hidden>Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
                     <option value="cheap" selected>Сначала дешевые</option>
                     <option value="popular">Сначала популярные</option>
                     <option value="expensive">Сначала дорогие</option>
                 </select>
-                <button class="visually-hidden" type="submit">Отсортировать</button>
+                <button class="visually-hidden" type="submit" hidden>Отсортировать</button>
             </form>
-            <a href="#" class="button-sort">
+            <div class="buttons-sort">
+              <a href="#" class="button-sort">
                 <span class="visually-hidden">Показать таблицу</span>
-            </a>
-            <a href="#" class="button-sort">
+              </a>
+              <a href="#" class="button-sort">
                 <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button-sort button-sort-active">
+              </a>
+              <a href="#" class="button-sort button-sort-active">
                 <span class="visually-hidden">Показать список</span>
-            </a>
+              </a>
+          </div>
         </section>
         <section class="hotel-cards">
           <h2 class="visually-hidden" hidden>Результаты поиска</h2>
