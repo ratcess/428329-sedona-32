@@ -245,6 +245,7 @@ body {
     background-color: #756257;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .newsletter {
@@ -281,18 +282,16 @@ body {
     color: #ffffff;
 }
 
-.newsletter-email {
+.button {
     margin: 0;
     padding: 0;
-}
-
-.button {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color:#ffffff;
     background-color: #83b3d3;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .button-in-favorites {
@@ -530,11 +529,25 @@ body {
     margin-right: 37px;
 }
 
+.hotel-card-image {
+    display: block;
+}
+
 .hotel-card-description {
+    display: grid;
+    width: 319px;
+    grid-template-columns: 151px 160px;
+    column-gap: 8px;
     margin-right: auto;
 }
 
+.hotel-card-title-link {
+    grid-column: 1 / -1;
+}
+
 .hotel-card-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
@@ -544,6 +557,9 @@ body {
 }
 
 .hotel-card-type {
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
     color: #333333;
@@ -552,6 +568,8 @@ body {
 }
 
 .hotel-card-price {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
     color: #333333;
@@ -561,8 +579,7 @@ body {
 
 .hotel-card-button {
     display: block;
-    width: 151px;
-    padding: 10px;
+    padding: 10px 31px 9px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -572,7 +589,19 @@ body {
     text-decoration: none;
 }
 
+.hotel-card-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-stars {
+    margin: 0;
+}
 .rating {
+    margin: 0;
+    padding: 10px 32px 9px 32px;
+    border-radius: 4px;
     font-size: 16px;
     line-height: 21px;
     color: #333333;
@@ -659,7 +688,10 @@ body {
     color: #333333;
 }
 
-.newsletter-email-inner {
-    margin: 0;
-    padding: 0;
+.newsletter-form-inner {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr auto;
+    width: 800px;
+    box-sizing: border-box;
 }
