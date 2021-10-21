@@ -238,9 +238,7 @@ body {
 }
 
 .search-link {
-    display: block;
-    padding-top: 13px;
-    padding-bottom: 17px;
+    padding: 13px 145px 17px 145px;
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
@@ -256,6 +254,14 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
+}
+
+.newsletter-form {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr auto;
+    width: 800px;
+    box-sizing: border-box;
 }
 
 .newsletter-title {
