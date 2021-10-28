@@ -54,7 +54,7 @@
 
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -291,7 +291,10 @@
         <p class="newsletter-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
         
         <form class="newsletter-form-inner" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" placeholder="Ваш e-mail">
+          <p class="newsletter-email-inner">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          </p>
           <button type="submit">Подписаться</button>
         </form>
       </section>
