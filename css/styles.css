@@ -250,6 +250,15 @@ body {
     padding: 98px 75px 77px 75px;
 }
 
+.advantages-list-icon {
+    position: absolute;
+    top: -131px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
 .advantages-list-title {
     margin: 0;
     margin-bottom: 25px;
