@@ -52,11 +52,16 @@ body {
     flex-grow: 1;
 }
 
+.page-header {
+    position: relative;
+}
+
 .navigation {
     display: flex;
     width: 1090px;
     margin: 0 auto;
-    text-align: center;
+    /*text-align: center;*/
+    
 }
 
 .navigation-list {
@@ -68,30 +73,73 @@ body {
     list-style-type: none;
 }
 
+.navigation-item {
+    margin: 0;
+    padding: 0;
+}
+
 .navigation-link {
     display: block;
-    padding: 20px 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 33px;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     text-decoration: none;
 }
 
 .navigation-logo {
-    width: 138px;
+    /*width: 138px;*/
     margin: 0 auto;
+    position: absolute;
+    left: 531px;
 }
 
 .navigation-user {
-    max-width: 270px;
+    max-width: 315px;
     margin-left: auto;
 }
 
-.navigation-user .navigation-link {
+.navigation-user-link {
+    position: relative;
+    margin: 0;
+    margin-right: 20px;
     min-width: 31px;
     min-height: 27px;
+}
+
+.navigation-link-login {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffffff;
+    background-color: #756257;
+    padding: 9px 34px 10px 34px;
+    border-radius: 4px;
+    margin: 14px 0 14px 0;
+}
+
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #000000;
+  }
+
+.navigation-icon-favorites {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+    fill: #000000;
 }
 
 .main-container {
@@ -105,37 +153,47 @@ body {
     background-position: bottom, center;
     padding-top: 51px;
     padding-bottom: 73px;
+    margin: 0;
+    margin-bottom: 63px;
 }
 
 .intro-wrapper {
     padding-left: 240px;
     padding-right: 240px;
-    padding-bottom: 83px;
+    margin: 0;
+    margin-bottom: 79px;
+}
+
+.intro-wrapper p:not(.intro-description) {
+    margin: 0;
+    padding: 0;
 }
 
 .intro-description {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
     font-weight: 700;
     font-size: 30px;
     color: #000000;
     background-color: #ffffff;
-    text-align: center;
+    /*text-align: center;*/
     text-transform: uppercase;
-}
-
-.advantages-picture {
-    display: block;
 }
 
 .advantages-full {
     display: flex;
 }
 
+.advantages-picture {
+    display: block;
+}
+
 .advantages-item {
     background-color: #83B3D3;
     width: 400px;
     color: #ffffff;
-    padding: 98px 90px 77px 90px;
-    
+    padding: 98px 90px 77px 90px; 
 }
 
 .advantages-item-picture {
@@ -144,6 +202,8 @@ body {
 
 .advantages-title {
     margin: 0px;
+    padding: 0;
+    padding-bottom: 25px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -152,7 +212,7 @@ body {
 
 .advantages-number {
     margin: 0;
-    padding-top: 25px;
+    padding: 0;
     padding-bottom: 25px;
     font-size: 18px;
     line-height: 21px;
@@ -160,6 +220,7 @@ body {
 
 .advantages-description {
     margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 21px;
 }
@@ -173,6 +234,7 @@ body {
 }
 
 .advantages-list-item {
+    position: relative;
     width: 33.33%;
     background: rgba(131, 179, 211, 0.12);
     padding: 184px 75px 79px 75px;
@@ -190,11 +252,20 @@ body {
 
 .advantages-list-title {
     margin: 0;
+    margin-bottom: 25px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
     text-transform: uppercase;
+}
+
+.advantages-list-number {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
 }
 
 .advantages-list-description {
@@ -204,26 +275,20 @@ body {
     color: #333333;
 }
 
-.advantages-list-number {
-    margin: 0;
-    padding-top: 25px;
-    padding-bottom: 26px;
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-}
-
 .advantages-small {
     padding: 98px 75px 77px 75px;
+    margin: 0;
 }
 
 .search {
-    padding: 90px 300px 90px 300px;
+    margin: 0;
+    padding: 91px 300px 90px 300px;
 }
 
 .search-title {
     margin: 0;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding: 0;
     font-weight: 700;
     font-size: 30px;
     color: #000000;
@@ -233,7 +298,8 @@ body {
 
 .search-description {
     margin: 0;
-    padding-bottom: 73px;
+    margin-bottom: 73px;
+    padding: 0;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
@@ -249,6 +315,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .newsletter {
