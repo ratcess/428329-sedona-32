@@ -143,13 +143,15 @@
             <h2 class="visually-hidden">Сортировка</h2>
             <p class="sort-results">Найдено гостиниц: 38</p>
             <form class="sort-type" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="select"> 
                 <label class="visually-hidden" for="sorting">Сортировка</label>
                 <select class="select-control" id="sorting" name="sorting">
                     <option value="cheap" selected>Сначала дешевые</option>
                     <option value="popular">Сначала популярные</option>
                     <option value="expensive">Сначала дорогие</option>
                 </select>
-                <button class="visually-hidden" type="submit" hidden>Отсортировать</button>
+              </div>
+          <button class="visually-hidden" type="submit" hidden>Отсортировать</button>
             </form>
 
             <a href="#" class="button-sort">
@@ -265,8 +267,10 @@
             </ul>
 
             <form class="hotel-view" action="https://echo.htmlacademy.ru/" method="get">
+
+              <div class="select select-hotel">
                 <label class="hotel-view-title" for="hotel-view">Гостиниц на странице:</label>
-                <select class="select-control" id="hotel-view" name="hotel-view">
+                <select class="select-control select-control-hotel" id="hotel-view" name="hotel-view">
                     <option value="one">1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
@@ -278,6 +282,7 @@
                     <option value="nine">9</option>
                     <option value="ten">10</option>
                 </select>
+              </div>
                 <button class="visually-hidden" type="submit">Отсортировать</button>
             </form>
           </div>
@@ -286,15 +291,15 @@
 
     <footer class="page-footer">
       <section class="newsletter-inner">
-        <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="newsletter-title newsletter-title-inner">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description newsletter-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
         
-        <form class="newsletter-form-inner" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="newsletter-email-inner">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <input class="field field-inner" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
-          <button type="submit">Подписаться</button>
+          <button class="newsletter-button" type="submit"><span>Подписаться</span></button>
         </form>
       </section>
 
