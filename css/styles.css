@@ -76,7 +76,6 @@ body {
     padding: 0;
     padding-top: 14px;
     margin-left: 21px;
-
 }
 
 .navigation-link {
@@ -103,7 +102,7 @@ body {
     border-color: #83B3D3;
 }
 
-.navigation-link:active:not(.navigation-link-login) {
+.navigation-link:active:not(.navigation-user-link):not(.navigation-link-login) {
     color: #756257;
     opacity: 0.3;
 }
@@ -134,18 +133,20 @@ body {
 .navigation-user-link {
     position: relative;
     margin: 0;
-    margin-right: 20px;
     width: 38px;
     height: 38px;
     border: 3px solid transparent;
     border-radius: 10px;
     box-sizing: border-box;
     outline: none;
-
 }
 
 .navigation-user-link:focus .navigation-icon {
     fill: #756257;
+}
+
+.navigation-user-link:active span {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-link-login {
@@ -175,7 +176,6 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-
 .navigation-icon {
     position: absolute;
     top: 0px;
@@ -191,12 +191,22 @@ body {
   }
 
 .navigation-icon-favorites {
+    display: block;
+    width: 19px;
+    height: 19px;
     position: absolute;
     top: -20px;
     right: 0;
     bottom: 0;
     left: 20px;
     margin: auto;
+    padding: 0;
+    color: white;
+    font-size: 10px;
+    line-height: 19px;
+    text-align: center;
+    background-color: #7DB550;
+    border-radius: 100%;
 }
 
 .main-container {
@@ -779,32 +789,36 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
-  position: absolute;
-  top: 8px;
-  left: 7px;
-  width: 10px;
-  height: 2px;
-  background-color: #3F5E72;
-  content: "";
+    position: absolute;
+    width: 12px;
+    height: 10px;
+    top: 5px;
+    left: 4px;
+    content: "";
+    background-image: url("../img/check.svg");
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
-  transform: rotate(-50deg);
-}
-
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.radio-mark {
     position: absolute;
     top: 10px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.control-input[type="radio"]:checked + .radio-mark::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
     left: 5px;
-    width: 6px;
-    height: 2px;
-    background-color: #3F5E72;
     content: "";
-  }
-  
-  .control-input[type="checkbox"]:checked + .control-mark::after {
-    transform: rotate(40deg);
-  }
+    background-color: #3F5E72;
+    border-radius: 50%;
+}
 
 
 .catalog-filter-title {
@@ -815,6 +829,101 @@ body {
     font-size: 20px;
     line-height: 26px;
     color: #ffffff;
+}
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-top: 32px;
+    background-color: #636b6e;
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+  
+.range-toggle:active,
+.range-toggle:focus {
+    border-color: #83B3D3;
+    outline: none;
+}
+
+.toggle-min {
+    top: -8px;
+    left: 0px;
+}
+  
+.toggle-max {
+    top: -8px;
+    right: 0px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 11px 17px 10px 19px;
+  }
+
+  .range-wrapper-inputs::before {
+      position: absolute;
+      content: "";
+      border-right: 2px solid #ffffff;
+      top: 0;
+      bottom: 0;
+      left: 140px;
+  }
+
+  .range-wrapper-inputs:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+
+.range-input {
+    width: 77px;
+    font: inherit;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+}
+
+.range-input[value] {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+    color:rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    line-height: 23px;
 }
 
 .catalog-filter-button {
