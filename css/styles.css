@@ -490,6 +490,7 @@ body {
     padding-right: 25px;
     border: 3px solid transparent;
     border-radius: 0px 10px 10px 0px;
+    outline: 0;
 }
 
 .newsletter-button:hover {
@@ -499,7 +500,6 @@ body {
 
 .newsletter-button:focus:not(:active) {
     border-color:#756257;
-    outline: 0;
 }
 
 .newsletter-button:active {
@@ -827,14 +827,19 @@ body {
     color:#ffffff;
     text-transform: uppercase;
     background-color: #83b3d3;
+    border: 3px solid transparent;
     border-radius: 4px;
-    border: 0;
+    outline: none;
 
 }
 
 .catalog-filter-button:hover {
     background: #68A2CA;
     cursor: pointer;
+}
+
+.catalog-filter-button:focus:not(:active) {
+    border-color: #ffffff;
 }
 
 .catalog-filter-button:active {
@@ -846,13 +851,19 @@ body {
     line-height: 24px;
     color: #ffffff;
     background-color: transparent;
-    border: 0;
     padding: 3px 9px 3px 9px;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    outline: none;
 }
 
 .catalog-filter-button-reset:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+.catalog-filter-button-reset:focus:not(:active) {
+    border-color: #83B3D3;
 }
 
 .catalog-filter-button-reset:active {
@@ -1011,9 +1022,14 @@ body {
     border-bottom: 1px solid #E6E6E6;
 }
 
-
 .hotel-card-image-link {
     margin-right: 37px;
+    border: 3px solid transparent;
+    outline: none;
+}
+
+.hotel-card-image-link:focus:not(:active) {
+    border-color: #83B3D3;
 }
 
 .hotel-card-image {
@@ -1039,6 +1055,14 @@ body {
 .hotel-card-title-link {
     grid-column: 1 / -1;
     text-decoration: none;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+}
+
+.hotel-card-title-link:focus:not(:active) {
+    border-color:#83B3D3;
 }
 
 .hotel-card-title {
@@ -1048,7 +1072,6 @@ body {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
-    background-color: #ffffff;
     text-align: left;
 }
 
@@ -1062,7 +1085,7 @@ body {
 
 .hotel-card-type {
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     padding: 0;
     font-size: 18px;
     line-height: 24px;
@@ -1083,15 +1106,17 @@ body {
 
 .hotel-card-button {
     display: block;
-    padding: 9px 31px 9px 32px;
+    padding: 5px 28px 5px 28px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     background-color: #756257;
+    border: 3px solid transparent;
     border-radius: 4px;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
 }
 
 .hotel-card-button:hover {
@@ -1099,6 +1124,9 @@ body {
     cursor: pointer;
 }
 
+.hotel-card-button:focus:not(:active) {
+    border-color:#83B3D3;
+}
 .hotel-card-button:active {
     color: rgba(255, 255, 255, 0.3);
 }
@@ -1110,15 +1138,21 @@ body {
     line-height: 20px;
     color: #ffffff;
     background-color: #83B3D3;
-    border-radius: 4px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    outline: none;
 }
 
 .button-to-favorites:hover {
+    border: 1px solid #756257;
     background: #68A2CA;
     cursor: pointer;
+}
+
+.button-to-favorites:focus:not(:active) {
+    border-color:#756257;
 }
 
 .button-to-favorites:active {
@@ -1132,15 +1166,20 @@ body {
     line-height: 20px;
     color: #ffffff;
     background-color: #7DB54F;;
-    border-radius: 4px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    outline: none;
 }
 
 .button-in-favorites:hover {
     background: #6C9E42;
     cursor: pointer;
+}
+
+.button-in-favorites:focus:not(:active) {
+    border-color:#756257;
 }
 
 .button-in-favorites:active {
@@ -1180,12 +1219,17 @@ body {
     text-transform: uppercase;
     background-color: #83b3d3;
     border-radius: 4px;
-    border: 0;
+    border: 3px solid transparent;
+    outline: none;
 }
 
 .show-more-button:hover {
     background: #68A2CA;
     cursor: pointer;
+}
+
+.show-more-button:focus:not(:active) {
+    border-color: #756257;
 }
 
 .show-more-button:active {
@@ -1226,11 +1270,17 @@ body {
     color:#ffffff;
     background-color: #83B3D3;
     border-radius: 4px;
+    border: 3px solid transparent;
+    outline: none;
 }
 
 .pagination-link:hover:not(.pagination-current) {
     background: #68A2CA;
     cursor: pointer;
+}
+
+.pagination-link:focus:not(:active) {
+    border-color: #756257;
 }
 
 .pagination-link:active:not(.pagination-current) {
