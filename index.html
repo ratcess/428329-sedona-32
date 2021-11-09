@@ -237,6 +237,49 @@
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="modal-form-date">
+            <label for="modal-arrival">Дата заезда:</label>
+            <input class="modal-field" type="text" id="modal-arrival" name="modal-arrival" placeholder="">
+            <span class="modal-arrival-invalid">Мы не можем отправить вас в прошлое.</span>
+           </p>
+          <p class="modal-form-date">
+            <label for="modal-departure">Дата Выезда:</label>
+            <input class="modal-field" type="text" id="modal-departure" name="modal-departure" placeholder="">
+            <span class="modal-departure-correct">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <div class="modal-form-guests">
+            <div class="age age-adults">
+              <label for="age-title">Взрослые:</label>
+              <div class="age-area">
+                <button class="age-button age-less-button" type="button">
+                  <svg class="age-less-icon" width="13" height="1" fill="none"><path d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+                </button>
+                <input class="age-field adults-field" type="text" id="adults" name="adults" placeholder="">
+                <button class="age-button age-more-button" type="button">
+                  <svg class="age-more-icon" width="13" height="13" fill="none"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="age age-children">
+              <span class="age-title-children">
+                <label for="age-title ">Дети:</label>
+            </span>
+              <div class="age-area">
+                <button class="age-button age-less-button" type="button">
+                  <svg class="age-less-icon" width="13" height="1" fill="none"><path d="M0 0v1h13V0H0Z" fill="#000"/></svg>
+                </button>
+                <input class="age-field children-field" type="text" id="children" name="children" placeholder="">
+                <button class="age-button age-more-button" type="button">
+                  <svg class="age-more-icon" width="13" height="13" fill="none"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
       </section>
     </div>
   </div>
