@@ -662,7 +662,6 @@ body {
     padding-bottom: 80px;
 }
 
-
 .main-header-title {
     margin: 0;
     font-weight: 700;
@@ -720,25 +719,16 @@ body {
     color: #ffffff;
 }
 
-.breadcrumbs-item:first-child .breadcrumbs-link {
-    display: block;
-    width: 18px;
-    height: 18px;
-    /*margin: 0 auto;*/
-}
-
 .breadcrumbs-home-icon {
-    /*position: absolute;
-    top: 10;
-    right: 0;
-    bottom: 0;
-    left: 0;*/
-    /*margin: auto;*/
     fill: #ffffff;
     width: 12px;
     height: 12px;
     padding: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    
 }
+
 
 .breadcrumbs-link:hover {
     opacity: 0.6;
@@ -753,9 +743,6 @@ body {
 .breadcrumbs-link:active {
     opacity: 0.3;
 }
-
-
-/*FILTERS*/
 
 .catalog-filter {
     display: flex;
@@ -927,6 +914,7 @@ body {
   }
 
 .range-input {
+    color: #ffffff;
     width: 77px;
     font: inherit;
     text-align: left;
@@ -937,7 +925,7 @@ body {
     -moz-appearance: textfield;
 }
 
-.range-input[value] {
+.range-input::placeholder {
     color: #ffffff;
     font-size: 18px;
     line-height: 23px;
@@ -983,7 +971,7 @@ body {
 }
 
 .catalog-filter-label:focus-within {
-    box-shadow: 0px 0px 0px 3px #81B3D2;
+    box-shadow: 0px 0px 0px 3px #81b3d2, inset 0px 0px 0px 3px #81b3d2;
 }
 
 .catalog-filter-label-min:focus-within {
@@ -992,10 +980,6 @@ body {
 
 .catalog-filter-label-max:focus-within {
     border-radius: 0px 4px 4px 0px;
-}
-
-.catalog-filter-label:focus-within:not(:empty) {
-    background: #756257;
 }
 
 .catalog-filter-button {
