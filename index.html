@@ -244,33 +244,35 @@
           </p>
           <div class="modal-form-guests">
             <div class="age age-adults">
-              <label for="age-title">Взрослые:</label>
+              <label for="adults">Взрослые:</label>
               <div class="age-area">
                 <button class="age-button age-less-button" type="button">
                   <svg class="age-less-icon" width="13" height="1" fill="none"><path d="M0 0v1h13V0H0Z" fill="#000"/></svg>
                 </button>
-                <input class="age-field adults-field" type="number" id="adults" name="adults" placeholder="">
+                <input class="age-field adults-field" type="number" id="adults" name="adults" placeholder="0">
                 <button class="age-button age-more-button" type="button">
                   <svg class="age-more-icon" width="13" height="13" fill="none"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
                 </button>
               </div>
             </div>
-
             <div class="age age-children">
-              <span class="age-title-children">
-                <label for="age-title ">Дети:</label>
-            </span>
+                <label for="children">Дети:</label>
+                <div class="age-info">
+                  <button class="age-button-info" type="button"></button>
+                  <p class="age-info-description">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
               <div class="age-area">
                 <button class="age-button age-less-button" type="button">
                   <svg class="age-less-icon" width="13" height="1" fill="none"><path d="M0 0v1h13V0H0Z" fill="#000"/></svg>
                 </button>
-                <input class="age-field children-field" type="number" id="children" name="children" placeholder="">
+                <input class="age-field children-field" type="number" id="children" name="children" placeholder="0">
                 <button class="age-button age-more-button" type="button">
                   <svg class="age-more-icon" width="13" height="13" fill="none"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
                 </button>
               </div>
             </div>
           </div>
+          <a class="modal-link-search" href="#">Найти</a>
         </form>
       </section>
     </div>

@@ -658,6 +658,8 @@ body {
 
 .main-header {
     background-image: url("../img/background-hotels.jpg");
+    background-color: #967b72;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 80px;
 }
@@ -719,24 +721,25 @@ body {
     color: #ffffff;
 }
 
+.breadcrumbs-link:first-child {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .breadcrumbs-home-icon {
     fill: #ffffff;
     width: 12px;
     height: 12px;
-    padding: 3px;
-    display: inline-block;
-    vertical-align: middle;
-    
+    /*padding: 3px;*/ 
 }
-
 
 .breadcrumbs-link:hover {
     opacity: 0.6;
 }
 
 .breadcrumbs-link:focus-within {
-    outline: 3px solid #83B3D3;
-    outline-offset: 3px;
+    outline: none;
+    border: 3px solid #83B3D3;
     border-radius: 4px;
 }
 
@@ -1503,7 +1506,7 @@ body {
 
 
 .popover {
-    /*display: none;*/
+    display: none;
     position: absolute;
     top: 62px;
     right: 72px;
@@ -1666,9 +1669,9 @@ body {
     background-color: rgba(242, 242, 242, 0.8);;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
-}
+}*/
 
 .modal {
     position: relative;
@@ -1795,6 +1798,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 
 .age {
@@ -1805,6 +1809,10 @@ body {
     color: #000000;
 }
 
+.age label {
+    margin-top: 5px;
+}
+
 .age-adults {
     width: 288px;
 }
@@ -1812,6 +1820,65 @@ body {
 .age-children {
     width: 230px;
     position: relative;
+}
+
+.age-info {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    margin-top: 12px;
+}
+
+.age-info:hover {
+    background-color: #68A2CA;
+}
+
+.age-button-info {
+    width: 24px;
+    height: 26px;
+    border: 0;
+    background-image: url("../img/info.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.age-info-description {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -120px;
+    box-sizing: border-box;
+    width: 256px;
+    height: 143px;
+    margin: 0;
+    padding: 15px 18px 18px 22px;
+    background-color: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.age-info-description::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -6px;
+    left: 126px;
+    width: 13px;
+    height: 13px;
+    background-color: #333333;
+    transform: rotate(45deg); 
+}
+
+.age-info:hover .age-info-description{
+    display: block;
 }
 
 .age-area {
@@ -1881,4 +1948,34 @@ body {
 .age-less-icon {
     vertical-align: middle;
     width: 13px;
+}
+
+.modal-link-search {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #83b3d3;
+    box-sizing: border-box;
+    width: 575px;
+    padding: 7px 255px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color:#ffffff;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    outline: none;
+}
+
+.modal-link-search:hover {
+    background: #68A2CA;
+    cursor: pointer;
+}
+
+.modal-link-search:focus:not(:active) {
+    border-color: #756257;
+}
+
+.modal-link-search:active {
+    color: rgba(255, 255, 255, 0.3);
 }
