@@ -767,6 +767,7 @@ body {
 
 .htmlacademy-link {
     display: block;
+    width: 115px;
     height: 34px;
     padding: 18px 22px;
 
@@ -1738,7 +1739,7 @@ body {
     left: -178px;
     z-index: 1;
 
-    /*display: none;*/
+    display: none;
     width: 400px;
 
     box-sizing: border-box;
