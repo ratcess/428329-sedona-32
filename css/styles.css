@@ -139,12 +139,12 @@ body {
     right: 6px;
     bottom: -18px;
     left: 6px;
+    content: "";
 
     height: 2px;
 
     background-color: #756257;
 
-    content: "";
 }
 
 .navigation-logo {
@@ -397,42 +397,39 @@ body {
     position: absolute;
     top: -95px;
     left: 50%;
+    content: "";
 
     width: 75px;
     height: 72px;
     margin-left: -37px;
 
     background-image: url("../img/icon-home.svg");
-
-    content: "";
 }
 
 .advantages-food::before {
     position: absolute;
     top: -93px;
     left: 50%;
+    content: "";
 
     width: 74px;
     height: 70px;
     margin-left: -37px;
 
     background-image: url("../img/icon-food.svg");
-
-    content: "";
 }
 
 .advantages-gift::before {
     position: absolute;
     top: -99px;
     left: 50%;
+    content: "";
 
     width: 64px;
     height: 76px;
     margin-left: -32px;
 
     background-image: url("../img/icon-gift.svg");
-
-    content: "";
 }
 
 .advantages-list-item-light {
@@ -832,13 +829,12 @@ body {
     position: absolute;
     top: 18px;
     left: -11px;
+    content: "";
 
     width: 5px;
     height: 8px;
 
     background-image: url("../img/arrow-right.svg");
-
-    content: "";
 }
 
 .breadcrumbs-item:first-child::before {
@@ -1739,7 +1735,7 @@ body {
     right: 72px;
     z-index: 1;
 
-    /*display: none;*/
+    display: none;
     width: 400px;
 
     box-sizing: border-box;
