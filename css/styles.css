@@ -1916,9 +1916,9 @@ body {
     background-color: rgba(242, 242, 242, 0.8);;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
-}
+}*/
 
 .modal {
     position: relative;
@@ -2241,6 +2241,7 @@ body {
     padding: 7px 255px;
     box-sizing: border-box;
 
+    font-family: inherit;
     font-size: 20px;
     line-height: 40px;
     font-weight: 700;
