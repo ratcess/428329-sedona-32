@@ -1677,7 +1677,9 @@ body {
 
 .pagination-current {
     color: #000000;
+
     background-color: #F2F2F2;
+    cursor: default;
 }
 
 .pagination::before {
@@ -1737,7 +1739,7 @@ body {
     right: 72px;
     z-index: 1;
 
-    display: none;
+    /*display: none;*/
     width: 400px;
 
     box-sizing: border-box;
@@ -1916,9 +1918,9 @@ body {
     background-color: rgba(242, 242, 242, 0.8);;
 }
 
-/*.modal-container-close {
+.modal-container-close {
     display: none;
-}*/
+}
 
 .modal {
     position: relative;
