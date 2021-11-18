@@ -93,6 +93,7 @@ body {
 }
 
 .navigation-user-favorites {
+    position: relative; 
     margin-right: 9px;
 }
 
@@ -1732,10 +1733,10 @@ body {
 .popover {
     position: absolute;
     top: 62px;
-    right: 72px;
+    left: -178px;
     z-index: 1;
 
-    display: none;
+    /*display: none;*/
     width: 400px;
 
     box-sizing: border-box;
@@ -1906,6 +1907,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 
     display: flex;
     width: 100%;
