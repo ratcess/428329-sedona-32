@@ -1919,9 +1919,9 @@ body {
     background-color: rgba(242, 242, 242, 0.8);;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
-}
+}*/
 
 .modal {
     position: relative;
@@ -2042,8 +2042,8 @@ body {
 
 .modal-arrival-invalid {
     position: absolute;
-    top: 45px;
-    left: 160px;
+    top: 44px;
+    left: 158px;
 
     display: block;
 
@@ -2055,8 +2055,8 @@ body {
 
 .modal-departure-correct {
     position: absolute;
-    top: 45px;
-    left: 160px;
+    top: 44px;
+    left: 158px;
 
     display: block;
 
@@ -2113,8 +2113,14 @@ body {
 }
 
 .age-button-info {
-    width: 24px;
-    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
 
     background-image: url("../img/info.svg");
     background-color: transparent;
@@ -2126,8 +2132,6 @@ body {
 
 .age-info-description {
     position: absolute;
-    top: 45px;
-    left: -120px;
 
     display: none;
     width: 256px;
@@ -2167,6 +2171,7 @@ body {
 .age-area {
     width: 133px;
     padding: 0;
+    padding: 8px 0px;
     margin: 0;
 
     background-color: #F2F2F2;
@@ -2176,7 +2181,10 @@ body {
 
 .age-field {
     width: 43px;
+    padding: 0;
+    box-sizing: border-box;
     
+    font-family: inherit;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -2196,8 +2204,6 @@ body {
 
 .age-button {
     margin: 0; 
-    margin-top: 11px;
-    margin-bottom: 12px;
     padding: 3px;
 
     border: 3px solid transparent;
@@ -2219,11 +2225,11 @@ body {
 }
 
 .age-less-button {
-    margin-left: 11px;
+    margin-left: 15px;
 }
 
 .age-more-button {
-    margin-right: 11px;  
+    margin-left: 6px;  
 }
 
 .age-more-icon {
