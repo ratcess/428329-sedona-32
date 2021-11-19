@@ -1476,7 +1476,8 @@ body {
 }
 
 .hotel-card-button {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 5px 28px 5px 28px;
 
     font-size: 16px;
