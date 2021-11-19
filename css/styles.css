@@ -308,10 +308,6 @@ body {
     display: flex;
 }
 
-.advantages-picture {
-    display: block;
-}
-
 .advantages-full-item {
     width: 400px;
     padding: 98px 90px 77px 90px; 
@@ -351,6 +347,12 @@ body {
 
 .advantages-item-picture {
     width: 800px;
+}
+
+.advantages-picture {
+    display: block;
+    height: 100%;
+    object-fit: cover;
 }
 
 .advantages-list { 
@@ -553,6 +555,7 @@ body {
     background-image: url("../img/background-mailing.jpg");
     background-color: #54779f;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .newsletter-title {
